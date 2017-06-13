@@ -1,0 +1,11 @@
+<input type="text" [(ngModel)]="email" nmame="txtEmail">
+<input type="text" [(ngModel)]="password" nmame="txtPassword">
+<button (click)="login()">Login</button>
+<button (click)="logout()">Logout</button>
+<button (click)="loginWithGoogle()">LoginWithGoogle</button>
+<h1>{{email}}:{{password}}:{{name}}</h1>
+<h1>
+    <ul>
+        <li *ngFor="let item of allUsers">{{item}}</li>
+    </ul>
+</h1>
